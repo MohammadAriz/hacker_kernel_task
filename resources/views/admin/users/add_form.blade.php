@@ -2,7 +2,7 @@
 @section('main-content')
     <div id="page-wrapper">
         <div id="page-inner">
-            {{-- <div class="row"> --}}
+          
 
             <h1 class="text-center">User Form</h1>
             <form action="{{ route('user.store') }}" method="post" enctype="multipart/form-data">
