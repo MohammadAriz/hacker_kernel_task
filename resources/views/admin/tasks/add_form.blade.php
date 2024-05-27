@@ -2,10 +2,10 @@
 @section('main-content')
     <div id="page-wrapper">
         <div id="page-inner">
-            {{-- <div class="row"> --}}
+           
 
             <h1 class="text-center">Tasks</h1>
-            <form action="" method="post" enctype="multipart/form-data">
+            <form action="{{route('task.store')}}" method="post" enctype="multipart/form-data">
                 @csrf
                 @php
                     $users = App\Models\User::all();
