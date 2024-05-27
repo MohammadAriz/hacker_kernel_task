@@ -33,7 +33,7 @@ Route::get('/tasks', [TaskController::class, 'index']);
 Route::get('/export-task', [TaskController::class, 'export_task']);
 
 Route::get('/create-task', [TaskController::class, 'create']);
-Route::post('/create-task', [TaskController::class, 'store']);
+Route::post('/store-task', [TaskController::class, 'store'])->name('task.store');
 Route::get('/edit-task/{id}', [TaskController::class, 'edit']);
 Route::post('/update-task/{id}', [TaskController::class, 'update']);
 Route::get('/delete-task/{id}', [TaskController::class, 'delete']);
